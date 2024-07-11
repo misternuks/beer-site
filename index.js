@@ -42,7 +42,7 @@ app.get('/beers/:id', async (req, res) => {
 });
 
 // Update a beer
-app.put('beers/:id', async (req, res) => {
+app.put('/beers/:id', async (req, res) => {
   try {
     const [updated] = await Beer.update(req.body, {
       where: { id: req.params.id }
@@ -51,7 +51,7 @@ app.put('beers/:id', async (req, res) => {
       const updatedBeer = await Beer.findByPk(req.params.id);
       res.status(200).json(updatedBeer);
     } else {
-      res.status(404).json({ error: error.message });
+      res.status(404).json({ error: 'Beer not found' });
     }
   } catch (error) {
     res.status(400).json({ error: error.message });
