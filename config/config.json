@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "misternuks",
+    "password": "I like big butt5",
+    "database": "beer_site_dev",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "misternuks",
+    "password": "I like big butt5",
+    "database": "beer_site_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "misternuks",
+    "password": "I like big butt5",
+    "database": "beer_site_prod",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
